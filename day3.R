@@ -1,7 +1,7 @@
 x <- readLines("day3.txt")
 x <- strsplit(x, split = " | @ |: |,|x")
 
-# Part 1
+# Part 1 ----
 x <- lapply(x, function(elem) {
     elem <- list(claim = elem[1],
                  dleft = as.numeric(elem[2]),
@@ -22,7 +22,7 @@ for (i in 1:length(x)) {
 
 print(length(matrix_master[matrix_master > 1]))
 
-# Part 2
+# Part 2 ----
 for (i in 1:length(x)) {
     hrange <- eval(parse(text = x[[i]]$hrange))
     wrange <- eval(parse(text = x[[i]]$wrange))

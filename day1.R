@@ -1,10 +1,10 @@
 x <- readLines("day1.txt")
 x <- as.numeric(gsub("\\+", "", x))
 
-# Part 1
+# Part 1 ----
 sum(x)
 
-# Part 2
+# Part 2 ----
 freq_vec <- numeric()
 freq_found <- 0
 run_sum <- 0
